@@ -5,7 +5,6 @@ const CAMERA = document.getElementById("camera")
 SCENE.appendChild(THUNDERDOME.el)
 
 
-
 function main() {
   GAME.spawnPlayer()
   GAME.spawnBall()

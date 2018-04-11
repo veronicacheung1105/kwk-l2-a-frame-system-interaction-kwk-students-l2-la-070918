@@ -67,10 +67,20 @@ AFRAME.registerSystem('game', {
   restart: function() {
     this.player.el.components.sound.playSound()
     this.removeAllBalls()
+    // TODO: spawn a new ball!
   },
 
-  // every time the game updates its state
+  newBallShouldSpawn: function() {
+    // TODO: implement me!
+    // hint: Is there some way to use Date.now() to compare the current time and the time since the last ball spawned?
+    return false
+  },
+
+  // this runs constantly!
   tick: function() {
+    // if (newBallShouldSpawn()) {
+    //   this.spawnBall()
+    // }
     this.balls.forEach(ball => {
       const collided = this.checkPlayerCollision(ball)
       if (collided) {
