@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.0.1/dist/aframe-extras.min.js"></script>
+    <script src="./entities/Thunderdome.js"></script>
+    <script src="./entities/Ball.js"></script>
+    <script src="./entities/Player.js"></script>
+    <script src="./systems/Game.js"></script>
+  </head>
+
+  <body>
+
+    <a-scene light="defaultLightsEnabled: false" physics="debug: true">
+
+      <a-entity light="type: ambient"></a-entity>
+      <a-entity id="camera" camera look-controls wasd-controls position="0 0 20"></a-entity>
+
+    </a-scene>
+
+    <script src="./index.js"></script>
+  </body>
+
+</html>
