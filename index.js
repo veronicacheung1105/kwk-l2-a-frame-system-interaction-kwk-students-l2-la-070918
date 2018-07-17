@@ -8,6 +8,8 @@ SCENE.appendChild(THUNDERDOME.el)
 function main() {
   GAME.spawnPlayer()
   GAME.spawnBall()
+    GAME.spawnBall()
+      GAME.spawnBall()
 }
 
 
