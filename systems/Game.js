@@ -72,8 +72,8 @@ AFRAME.registerSystem('game', {
 
   newBallShouldSpawn: function() {
     // TODO: implement me!
-    for (var count = 0; count < 50; count++) while {
-      
+    while (var count = 0; count < 50; count++) {
+          this.GAME.spawnBall()
     }
     // hint: Is there some way to use Date.now() to compare the current time and the time since the last ball spawned?
     return false
