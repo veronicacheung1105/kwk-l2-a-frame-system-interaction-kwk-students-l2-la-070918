@@ -67,11 +67,12 @@ AFRAME.registerSystem('game', {
   restart: function() {
     this.player.el.components.sound.playSound()
     this.removeAllBalls()
-    // TODO: spawn a new ball!
+      GAME.spawnBall()
   },
 
   newBallShouldSpawn: function() {
     // TODO: implement me!
+      GAME.spawnBall()
     // hint: Is there some way to use Date.now() to compare the current time and the time since the last ball spawned?
     return false
   },
